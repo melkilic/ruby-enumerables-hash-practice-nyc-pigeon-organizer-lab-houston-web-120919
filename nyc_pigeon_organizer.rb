@@ -3,7 +3,7 @@
   pigeon_list = {}
 
   data.each do |keys, values|
-    values.each do |attribute_value, pigeon_names|
+    values.each do |pigeon_names|
       pigeon_names.each do |name|
         pigeon_list[name] ||= {}
         pigeon_list[name][keys] ||= []
