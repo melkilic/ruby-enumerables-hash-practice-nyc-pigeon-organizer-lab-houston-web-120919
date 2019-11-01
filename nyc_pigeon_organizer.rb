@@ -7,9 +7,9 @@
       pigeon_names.each do |name|
         if !pigeon_list[name]
         pigeon_list[name][keys] ||= []
+     pigeon_list[name][keys].push(attribute_value.to_s)
       end
-        pigeon_list[name][keys].push(attribute_value.to_s)
-      end
+    end
     end
   end
 
