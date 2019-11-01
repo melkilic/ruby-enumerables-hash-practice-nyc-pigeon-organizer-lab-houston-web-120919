@@ -9,10 +9,8 @@
         pigeon_list[name][attribute_name] ||= []
         pigeon_list[name][attribute_name].push(attribute_value.to_s)
       end
-    end 
+    end
   end
 
   pigeon_list
 end
-
-
