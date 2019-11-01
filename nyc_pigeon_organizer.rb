@@ -3,10 +3,11 @@
   pigeon_list = {}
 
   data.each do |keys, values|
-    values.each do |pigeon_names|
+    values.each do |attribute_value,pigeon_names|
       pigeon_names.each do |name|
-        pigeon_list[name] ||= {}
+        if !pigeon_list[name]
         pigeon_list[name][keys] ||= []
+      end
         pigeon_list[name][keys].push(attribute_value.to_s)
       end
     end
